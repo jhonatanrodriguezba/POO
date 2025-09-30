@@ -30,4 +30,14 @@ public class OperacionesMatematicas {
         }
         return resultado;
     }
+
+    //método para recibir numeros enteros por teclado
+    //public int leerEnteros(){
+        //Scanner sc = new Scanner(System.in);
+        //System.err.println("Digite el número entero...");
+        //int n = sc.nextInt();
+        //Para numeros enteros se utiliza el "nextInt", para reales "nextDouble", para booelanos "nexBoolean", para cadenas (String) "next()" - Cada uno va acompañado de un "sc.+{tipo de next}"
+        //sc.close();
+        //return n;
+    //}
 }
