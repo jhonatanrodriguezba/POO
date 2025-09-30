@@ -1,5 +1,3 @@
-package PrimerosEjercicios;
-
 public class TallerJavaaaCasoProp {
     public static void main(String[] args) {
         // datos del viaje:
