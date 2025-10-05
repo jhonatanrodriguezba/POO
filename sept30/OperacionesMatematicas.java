@@ -30,6 +30,52 @@ public class OperacionesMatematicas {
         }
         return resultado;
     }
+    public double potenciar(){
+        return Math.pow(a, b);
+    }
+    public double raiza(){
+        return Math.sqrt(a);
+    }
+    public double raizb(){
+        return Math.sqrt(b);
+    }
+    public double senoa(){
+        return Math.sin(a);
+    }
+    public double senob(){
+        return Math.sin(b);
+    }
+    public double cosenoa(){
+        return Math.cos(a);
+    }
+    public double cosenob(){
+        return Math.cos(b);
+    }
+    public double tana(){
+        return Math.tan(a);
+    }
+    public double tanb(){
+        return Math.tan(b);
+    }
+    public double lognata(){
+        return Math.log(a);
+    }
+    public double lognatb(){
+        return Math.log(b);
+    }
+    public double expa(){
+        return Math.exp(a);
+    }
+    public double expb(){
+        return Math.exp(b);
+    }
+    public double logdieza(){
+        return Math.log10(a);
+    }
+    public double logdiezb(){
+        return Math.log10(b);
+    }
+    
 
     //método para recibir numeros enteros por teclado
     //public int leerEnteros(){
