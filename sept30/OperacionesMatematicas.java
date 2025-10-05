@@ -8,6 +8,8 @@ public class OperacionesMatematicas {
     public OperacionesMatematicas(int a, int b){
         this.a = a;
         this.b = b;
+    
+    //Menú:
 
     }
     //metodos:
