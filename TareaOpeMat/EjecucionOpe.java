@@ -1,0 +1,44 @@
+package TareaOpeMat;
+
+import java.util.Scanner;
+
+public class EjecucionOpe {
+    public static void main(String[] args) {
+
+        Scanner menu = new Scanner(System.in);
+        System.err.println("Digite 1 para sumar");
+        System.err.println("Digite 2 Para resrar");
+        System.err.println("Digite 3 para multiplicar");
+        System.out.println("Digite 4 para dividir");
+        System.out.println("Digite 5 para Potenciar");
+        System.out.println("Digite 6 Para sacar raiz cuadrada");
+        System.out.println(" Digite 7 para usar funciones trigonometricas ");
+        System.err.println("Digite 8 Para usar Logaritmos");
+        int nummenu = 
+        menu.nextInt();
+
+
+        if (nummenu == 1){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Digite el Primer numero...");
+            int num1 = sc.nextInt();
+            System.out.println("Digite el Segundo Numero...");
+            int num2 = sc.nextInt();
+            OperacionesMat ObjMat = new OperacionesMat(num1, num2);
+             
+            System.out.println(num1 + " + " + num2 + " = " + ObjMat.sumar());
+        } else if (nummenu == 2) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Digite el primer numero...");
+            int num1 = sc.nextInt();
+            System.out.println("Digite Segundo Num...");
+            int num2 = sc.nextInt();
+            OperacionesMat ObjRest = new OperacionesMat(num1, num2);
+            
+            System.err.println(num1 + " - " + num2 + " = " + ObjRest.restar());
+            
+        }
+        
+    }
+}
+

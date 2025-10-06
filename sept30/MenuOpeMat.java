@@ -14,11 +14,16 @@ public class MenuOpeMat {
         int nummenu = menu.nextInt();
         menu.close();
 
-        if (nummenu == 1){
-            
-        }
-
         
 
+        if (nummenu == 1){
+             Scanner sc = new Scanner(System.in);
+             System.out.println("Digite el Primer numero...");
+             int num1 = sc.nextInt();
+             System.out.println("Digite el Segundo Numero");
+             int num2 = sc.nextInt();
+             
+             System.out.println(num1 + " + " + num2 + " = " );
+        }
     }
 }
