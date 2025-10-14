@@ -41,7 +41,7 @@ public class CuentaBancaria {
     }
 
     public void retirar(double cantidad) {
-        if (cantidad > 0 && cantidad <= saldo) {
+        if (cantidad > 0) {
             saldo -= cantidad;
         }
     }
