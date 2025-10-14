@@ -3,6 +3,7 @@ package tallerparcial;
 public class CuentaBancaria {
     private String titular;
     private double saldo;
+    private final double sobregiroLimite = -50.0;
 
     public CuentaBancaria() {
         this.titular = "";
@@ -11,7 +12,7 @@ public class CuentaBancaria {
 
     public CuentaBancaria(String titular, double saldo) {
         this.titular = titular;
-        this.saldo = saldo >= 0 ? saldo : 0.0;
+        this.saldo = saldo >= sobregiroLimite ? saldo : sobregiroLimite;
     }
 
     public String getTitular() {
@@ -42,7 +43,12 @@ public class CuentaBancaria {
 
     public void retirar(double cantidad) {
         if (cantidad > 0) {
-            saldo -= cantidad;
+            double nuevoSaldo = saldo - cantidad;
+            if (nuevoSaldo >= sobregiroLimite) {
+                saldo = nuevoSaldo;
+            } else {
+                System.out.println("Error, sobrepasas el limite de sobregiro, no se puede retirar en la cuenta de " + titular);
+            }
         }
     }
 

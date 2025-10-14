@@ -3,7 +3,7 @@ package tallerparcial.productoooo;
 public class EjecutarProducto {
     public static void main(String[] args) {
 
-        Producto p1 = new Producto("Café", 3500, 3);
+        Producto p1 = new Producto("Café", -500, 3);
 
         System.out.println("Antes del descuento:");
         System.out.println(p1);
