@@ -5,6 +5,7 @@ public class Producto {
     private String nombre;
     private double precioUnitario;
     private int cantidad;
+    private final double impuesto = 0.08;
 
     public Producto() {
         this.nombre = "";
@@ -58,6 +59,11 @@ public class Producto {
             return calcularSubtotal() - descuento;
         }
         return calcularSubtotal();
+    }
+    public double totalConImpuesto(double porcentajeConDescuento) {
+        double totalDescuento = aplicarDescuento(porcentajeConDescuento);
+        return totalDescuento + (totalDescuento * impuesto);
+
     }
 
     public void incrementarCantidad(int extra) {
