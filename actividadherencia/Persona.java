@@ -11,6 +11,21 @@ public class Persona {
         this.apellido = apellido;
         this.num_documento = num_documento;
         this.edad = edad;
+    
+    }
+
+    public Persona(String nombre2, String apellido2, String documento, String edad2) {
+        this.nombre = nombre2;
+        this.apellido = apellido2;
+        this.num_documento = num_documento;
+        this.edad = edad;
+    }
+
+    public Persona(String nombre2, int num_documento2, int edad2) {
+        this.nombre = nombre2;
+        this.apellido = apellido;
+        this.num_documento = num_documento2;
+        this.edad = edad2;
     }
 
     public void mostrarinfo (){

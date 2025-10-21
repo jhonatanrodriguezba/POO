@@ -5,7 +5,7 @@ public class Profesor extends Persona {
     private double salario;
 
     public Profesor(String nombre, String apellido, String documento, String edad, String asignatura, double salario) {
-        super(nombre, documento, edad);
+        super(nombre, apellido, documento, edad);
         this.asignatura = asignatura;
         this.salario = salario;
     }

@@ -7,7 +7,7 @@ public class Estudiante extends Persona {
 
     public Estudiante(String nombre, String apellido, int num_documento, int edad, String matricula, double promedio, int año_escolar ){
         
-        super(nombre, edad, num_documento);
+        super(nombre, num_documento, edad);
         this.matricula = matricula;
         this.promedio = promedio;
 
