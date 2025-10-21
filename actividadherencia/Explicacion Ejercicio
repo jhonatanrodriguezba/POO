@@ -1,0 +1,20 @@
+Un caso en la vida real donde se puede apliar el tema de Herencia es un Sistema de personas en una institucion educativa.
+donde de acuerdo al rango o papel que desempeñe la persona en la insitucion, puedo crear varias subclases con dichas caracteristicas.
+Por ejemplo, en una institucion educativa hay varios tipos de personas:
+- Estudiantes
+- Profesores
+- Administrativos
+Aquellos tipos de personas se pueden acomodar como subclases-
+
+Todas las personas tienen cosas en comun, por ej:
+- nombre
+- apellido
+- documentacion
+- edad
+
+Y cada tipo de persona tiene sus caracteristicas propias:
+- Estudiante: Estado de matricula (pagos al dia, mensualidades, etc), notas, promedios, etc.
+- Profesor: Asignatura(s), salario
+- Administrativos: Cargo(s), horarios, salarios.
+
+En los siguientes archivos estara la actividad hecha :)
