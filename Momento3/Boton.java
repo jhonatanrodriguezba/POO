@@ -1,5 +1,3 @@
-package Momento3;
-
 public class Boton {
     private boolean iluminado;
     private String tipo;
