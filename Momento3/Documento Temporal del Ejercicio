@@ -1,0 +1,19 @@
+[Espacio para el descrpcion, diagrama de clases, explicar ejecuciones, notas del codigo y comentarios en el codigo]
+
+Descripcion: Teniendo en cuenta el ejercicio propuesto sobre el ascensor, una idea que ya tenia era crear clases con los elementos
+esenciales que tiene un ascensor, como los botones que tiene diferentes funciones (aunque en este caso los agrupe en la clase "Boton"),
+el piso al que se dirige (a traves de los botones), tambien las partes que lo componen fisicamente como las puertas, y el
+funcionamiento general del ascensor donde utilice tambien diferentes herramientas vistas en clase y tambien aprendidas por cuenta mia,
+tales como el uso de condicionales, declaracion de variables, arrays, entre otros.
+
+Diagrama de clases en draw.io:
+
+Pruebas (Realizar y explicar al menos dos ejeciones completas del codigo):
+En la clase de ejecucion del sistema del ascensor (Principal.java) tenemos el control del ascensor donde podemos elegir pisos (de
+1er al 5to piso en este caso), solicitar el ascensor en pisos diferentes (como lo es este caso de ejemplo) y tambien dentro de la
+informacion reflejada nos expresa el estado del ascensor (por ejemplo si va subiendo o bajando hacia x piso).
+Si por ejemplo nosotros, pedimos el ascensor en el 3er piso, la soliitud se vera reflejada en la informacion retornada por el codigo,
+ahi el ascensor ira al 3er piso a atender la solicitud, donde tambien se imprime el estado de llegada (si el ascensor ya llego o
+va en camino). Despues de llegar y abrir puertas, se lee el piso donde se desea ir (en este ejemplo es el primero). Asi que 
+bajara al piso deseado. Todo movimiento del ascensor lo retorna el codigo, es decir, el estado del ascensor en cualquier momento,
+(si sube, si baja, si esta o no esta en x piso) se podra saber con claridad.
