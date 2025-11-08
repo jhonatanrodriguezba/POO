@@ -6,7 +6,7 @@ el piso al que se dirige (a traves de los botones), tambien las partes que lo co
 funcionamiento general del ascensor donde utilice tambien diferentes herramientas vistas en clase y tambien aprendidas por cuenta mia,
 tales como el uso de condicionales, declaracion de variables, arrays, entre otros.
 
-Diagrama de clases en draw.io:
+Diagrama de clases en draw.io: (Pendiente)
 
 Pruebas (Realizar y explicar al menos dos ejeciones completas del codigo):
 En la clase de ejecucion del sistema del ascensor (Principal.java) tenemos el control del ascensor donde podemos elegir pisos (de
