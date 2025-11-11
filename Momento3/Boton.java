@@ -1,29 +1,26 @@
 public class Boton {
-    private boolean iluminado;
-    private String tipo;
+    private String tipo; 
     private boolean presionado;
 
-    public Boton(String tipo){
+    public Boton(String tipo) {
         this.tipo = tipo;
-        this.iluminado = false;
         this.presionado = false;
     }
-    public void presionar(){
+
+    public void presionar() {
         presionado = true;
-        iluminar();
-        System.out.println("Boton de " + tipo + " esta presionado");
+        System.out.println("Se presionó el botón de " + tipo);
     }
-    public void iluminar(){
-        iluminado = true;
-        System.out.println("Boton de " + tipo + " esta iluminado");
+
+    public void reset() {
+        presionado = false;
     }
-    public void apagarLuz(){
-        iluminado = false;
-    }
-    public boolean estaPresionado(){
+
+    public boolean estaPresionado() {
         return presionado;
     }
-    public String getTipo(){
+
+    public String getTipo() {
         return tipo;
     }
 }
