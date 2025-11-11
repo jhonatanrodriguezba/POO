@@ -28,4 +28,17 @@ Diseño de las clases:
         2. Elegir piso dentro del ascensor (0-4)
         3. Activar Emergencia
         4. Salir del ascensor (como el ascensor se ejecuta dentro de un bucle, con el 4 se termina la ejecución.)
-        - Clase Principal: Es la que se encarga mediante el metodo main de hacer funcionar todo. En ese punto solo instancio un objeto de la clase anterior con 5 pisos y llamo al metodo iniciar para ejecutar todo 
+    - Clase Principal: Es la que se encarga mediante el metodo main de hacer funcionar todo. En ese punto solo instancio un objeto de la clase anterior con 5 pisos y llamo al metodo iniciar para ejecutar todo
+
+    EJECUCIONES:
+
+    -EJECUCION 1:
+        - Caso 1: Llamar el Ascensor desde un piso: En este caso, si llamamos el ascensor desde cualquier piso (0-4), el llegara y abrirar puertas en el piso solicitado, tal cual como en la vida real. Para esto ejecutamos el codigo, a lo que se ejecuta, este nos mostrara el menu principal:
+        -[Imagen del menu principal]
+        - El Usuario debe digitar 1 para llamar el ascensor desde el piso en el que esta (0-4). En este punto el sistema pregunta desde que piso se llama y en que direccion va
+        - {Imagen despues de digitar 1}
+        Entonces, lo que pasaria internamente es que se ejecuta el metodo llamarAscensor(), se crea el scanner para leer piso y direccion, despues cambia el estado del boton correspondiente (presionado), y luego ascensor.moverA(piso) se encarga de todo lo demas (determinar si se sube o se baja, usar el thread sleep, actualizar pisoActual y finalmente abrir puertas).
+
+    - EJECUCION 2:
+        - Caso 2: Simular que una persona dentro del ascensor selecciona un piso y se dirige a el: En este caso, se digita 2 y ahi el sistema preguntara hacia que piso desea ir, luego de eso se cierran las puertas y el ascensor se dirige hacia el piso deseado.
+        - Lo que pasa de manera interna es que se ejecuta el metodo seleccionarDestino(), el sistema pide el numero del piso, luego se llama a ascensor.cerrarPuerta() para simular cerrar puertas antes de moverse. Luego de eso, se ejecuta ascensor.moverA(destino). Ahi se determina si va de subida o bajada, tambien ejecuta el thread sleep y actualiza la posicion del ascensor y abre puertas cuando llega.
