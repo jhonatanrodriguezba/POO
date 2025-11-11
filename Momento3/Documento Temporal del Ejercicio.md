@@ -28,3 +28,4 @@ Diseño de las clases:
         2. Elegir piso dentro del ascensor (0-4)
         3. Activar Emergencia
         4. Salir del ascensor (como el ascensor se ejecuta dentro de un bucle, con el 4 se termina la ejecución.)
+        - Clase Principal: Es la que se encarga mediante el metodo main de hacer funcionar todo. En ese punto solo instancio un objeto de la clase anterior con 5 pisos y llamo al metodo iniciar para ejecutar todo 
