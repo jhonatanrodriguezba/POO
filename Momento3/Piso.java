@@ -1,20 +1,24 @@
 public class Piso {
-    private int num_piso;
-    private Boton b_subida;
-    private Boton b_bajada;
+    private int numero;
+    private Boton botonSubida;
+    private Boton botonBajada;
 
-    public Piso (int num_piso){
-        this.num_piso = num_piso;
-        b_subida = new Boton("Subida");
-        b_bajada = new Boton("Bajada");
+    public Piso(int numero) {
+        this.numero = numero;
+        this.botonSubida = new Boton("de subida");
+        this.botonBajada = new Boton("de bajada");
     }
-    public int getNumero(){
-        return num_piso;
+
+    public int getNumero() {
+        return numero;
     }
-    public Boton getb_subida(){
-        return b_subida;
+
+    public Boton getBotonSubida() {
+        return botonSubida;
     }
-    public Boton getb_bajada(){
-        return b_bajada;
+
+    public Boton getBotonBajada() {
+        return botonBajada;
     }
 }
+
