@@ -1,26 +1,21 @@
 public class Puerta {
     private boolean abierta;
-    private boolean obstaculo;
 
-    public Puerta(){
+    public Puerta() {
         this.abierta = false;
-        this.obstaculo = false;
     }
-    public void abrir(){
+
+    public void abrir() {
         abierta = true;
-        System.out.println("Puerta Abierta");
+        System.out.println("Puertas abiertas.");
     }
-    public void cerrar(){
+
+    public void cerrar() {
         abierta = false;
-        System.out.println("Puerta Cerrada");
-        if (!obstaculo){
-            System.out.println("Hay un Obstaculo en medio, no se puede cerrar");
-        }
+        System.out.println("Puertas cerradas.");
     }
-    public void detectar_obs(boolean estado){
-        obstaculo = estado;
-    }
-    public boolean esta_abierta(){
+
+    public boolean estaAbierta() {
         return abierta;
     }
 }
