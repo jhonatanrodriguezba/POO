@@ -42,3 +42,6 @@ Diseño de las clases:
     - EJECUCION 2:
         - Caso 2: Simular que una persona dentro del ascensor selecciona un piso y se dirige a el: En este caso, se digita 2 y ahi el sistema preguntara hacia que piso desea ir, luego de eso se cierran las puertas y el ascensor se dirige hacia el piso deseado.
         - Lo que pasa de manera interna es que se ejecuta el metodo seleccionarDestino(), el sistema pide el numero del piso, luego se llama a ascensor.cerrarPuerta() para simular cerrar puertas antes de moverse. Luego de eso, se ejecuta ascensor.moverA(destino). Ahi se determina si va de subida o bajada, tambien ejecuta el thread sleep y actualiza la posicion del ascensor y abre puertas cuando llega.
+
+- DIAGRAMA DE CLASES: https://drive.google.com/file/d/1IgQKbQpoukBxe2C-ZRyciA8yyfHo2lEe/view?usp=sharing
+
