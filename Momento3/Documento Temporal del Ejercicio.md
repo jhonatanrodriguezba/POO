@@ -44,4 +44,3 @@ Diseño de las clases:
         - Lo que pasa de manera interna es que se ejecuta el metodo seleccionarDestino(), el sistema pide el numero del piso, luego se llama a ascensor.cerrarPuerta() para simular cerrar puertas antes de moverse. Luego de eso, se ejecuta ascensor.moverA(destino). Ahi se determina si va de subida o bajada, tambien ejecuta el thread sleep y actualiza la posicion del ascensor y abre puertas cuando llega.
 
 - DIAGRAMA DE CLASES HECHO: https://drive.google.com/file/d/1IgQKbQpoukBxe2C-ZRyciA8yyfHo2lEe/view?usp=sharing
-
