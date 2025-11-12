@@ -4,6 +4,7 @@ public class SistemaControlDelAscensor {
     private Ascensor ascensor;
     private Piso[] pisos;
     private Scanner scanner;
+    private boolean activo;
 
     public SistemaControlDelAscensor(int cantidadPisos) {
         ascensor = new Ascensor();
@@ -61,7 +62,7 @@ public class SistemaControlDelAscensor {
         System.out.print("Desea subir (S) o bajar (B)? ");
         String dir = scanner.next().toUpperCase();
 
-        BotonPiso botonPiso;
+        Boton botonPiso;
         if (dir.equals("S")){
             botonPiso = pisos[piso].getBotonSubida();
         } else {
