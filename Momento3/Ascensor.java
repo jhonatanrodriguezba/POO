@@ -11,6 +11,8 @@ public class Ascensor {
         this.enMovimiento = false;
         this.puerta = new Puerta();
         this.botonEmergencia = new BotonEmergencia();
+
+        
     }
 
     public void moverA(int pisoDestino) {
