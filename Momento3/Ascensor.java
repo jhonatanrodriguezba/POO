@@ -3,14 +3,14 @@ public class Ascensor {
     private String direccion;
     private boolean enMovimiento;
     private Puerta puerta;
-    private Boton botonEmergencia;
+    private BotonEmergencia botonEmergencia;
 
     public Ascensor() {
         this.pisoActual = 0;
         this.direccion = "detenido";
         this.enMovimiento = false;
         this.puerta = new Puerta();
-        this.botonEmergencia = new Boton("emergencia");
+        this.botonEmergencia = new BotonEmergencia();
     }
 
     public void moverA(int pisoDestino) {
