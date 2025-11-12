@@ -61,10 +61,15 @@ public class SistemaControlDelAscensor {
         System.out.print("Desea subir (S) o bajar (B)? ");
         String dir = scanner.next().toUpperCase();
 
-        if (dir.equals("S")) pisos[piso].getBotonSubida().presionar();
-        else pisos[piso].getBotonBajada().presionar();
-
+        BotonPiso botonPiso;
+        if (dir.equals("S")){
+            botonPiso = pisos[piso].getBotonSubida();
+        } else {
+            botonPiso = pisos[piso].getBotonBajada();
+        }
+        botonPiso.presionar();
         ascensor.moverA(piso);
+        botonPiso.reset();
     }
 
     private void seleccionarDestino() {
@@ -75,8 +80,20 @@ public class SistemaControlDelAscensor {
             System.out.println("Piso no valido.");
             return;
         }
+        BotonAscensor botonDestino = new BotonAscensor(destino);
+        botonDestino.presionar();
 
         ascensor.cerrarPuerta();
         ascensor.moverA(destino);
+    }
+    private void activarEmergencia(){
+        BotonEmergencia botonEmergencia = new BotonEmergencia();
+        botonEmergencia.presionar();
+        ascensor.activarEmergencia();
+    }
+    private void salir(){
+        activo = false;
+        scanner.close();
+        System.err.println("Saliendo del Ascensor");
     }
 }

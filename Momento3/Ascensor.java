@@ -12,7 +12,10 @@ public class Ascensor {
         this.puerta = new Puerta();
         this.botonEmergencia = new BotonEmergencia();
 
-        
+        BotonAscensor boton0 = new BotonAscensor(0);
+        for (int i = 0; i < 5; i++){
+            BotonAscensor botonPiso = new BotonAscensor(i);
+        }
     }
 
     public void moverA(int pisoDestino) {
